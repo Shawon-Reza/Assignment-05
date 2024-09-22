@@ -36,13 +36,13 @@
             </div>
             <div class="flex gap-3">
                 <img src="./assets/coin.png" alt="">
-                <p id="totalBalanceId" class="text-xl font-semibold text-[#111111B3]">5500 BDT</p>
+                <p class="text-xl font-semibold text-[#111111B3]"><span id="totalBalanceId">5500</span> BDT</p>
 
             </div>
         </nav>
     </header>
 
-    <main>
+    <main class="">
         <section class="container mx-auto space-y-10">
             <!-- Button Div Start -->
             <div class="flex justify-center gap-5 mt-14 mb-20">
@@ -55,14 +55,12 @@
         <!-- Card COntainer Start -->
         <section id="cardContainerId" class="container mx-auto space-y-10 ">
             <!-- Card Container ---01 -->
-            <div class="flex gap-7">
-                <!-- <div class="w-[500px]"> -->
+            <div class="flex gap-7 relative ">
                 <img class="lg:w-[522px] md:w-[322px] object-cover" src="./assets/noakhali.png" alt="">
-                <!-- </div> -->
                 <div class="space-y-7">
-                    <button id="card1DonationId" class="btn"><img src="./assets/coin.png" alt=""> 155 BDT</button>
+                    <button class="btn"><img src="./assets/coin.png" alt=""><span id="card1DonationId">155</span> BDT</button>
 
-                    <h2 class="text-xl font-semibold">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 id="headingForNoakhali" class="text-xl font-semibold">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p class="text-[#111111B3] font-light"> The recent floods in Noakhali have caused significant damage
                         to homes infrastructure. Your
                         donation
@@ -72,11 +70,32 @@
                         positive
                         impact on the lives of those in need.</p>
                     <form action="`">
-                        <input type="number" name="" id="" class="w-full p-5 border rounded-lg"
+                        <input type="number" name="" id="c1InputId" class="w-full p-5 border rounded-lg"
                             placeholder="Write Donation Amount" required>
+
                     </form>
-                    <Button class="btn w-full bg-[#B4F461]">Donate Now</Button>
+                    <button id="donateProcessBtn1" class="btn w-full bg-[#B4F461]">Donate Now</button>
+                    <dialog id="my_modal_1" class="modal">
+                        <div class="modal-box text-center space-y-3">
+                            <h1 class="text-4xl font-extrabold">Congrates!</h1>
+                            <div class="flex justify-center">
+                                <img src="./assets/coin.png" alt="">
+                            </div>
+
+                            <p class="opacity-50">You Have Donate for Humankind</p>
+                            <h2 class="text-2xl font-semibold">Successfully</h2>
+
+
+                            <div class="modal-action flex justify-center">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn flex justify-center">Close confirmation</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
+
             </div>
 
 
@@ -100,7 +119,28 @@
                         <input type="number" name="" id="" class="w-full p-5 border rounded-lg"
                             placeholder="Write Donation Amount" required>
                     </form>
-                    <Button class="btn w-full bg-[#B4F461]">Donate Now</Button>
+
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="btn w-full bg-[#B4F461]" onclick="my_modal_2.showModal()">Donate Now</button>
+                    <dialog id="my_modal_2" class="modal">
+                        <div class="modal-box text-center space-y-3">
+                            <h1 class="text-4xl font-extrabold">Congrates!</h1>
+                            <div class="flex justify-center">
+                                <img src="./assets/coin.png" alt="">
+                            </div>
+
+                            <p class="opacity-50">You Have Donate for Humankind</p>
+                            <h2 class="text-2xl font-semibold">Successfully</h2>
+
+
+                            <div class="modal-action flex justify-center">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn flex justify-center">Close confirmation</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
 
@@ -124,20 +164,45 @@
                         <input type="number" name="" id="" class="w-full p-5 border rounded-lg"
                             placeholder="Write Donation Amount" required>
                     </form>
-                    <Button class="btn w-full bg-[#B4F461]">Donate Now</Button>
+
+
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="btn w-full bg-[#B4F461]" onclick="my_modal_3.showModal()">Donate Now</button>
+                    <dialog id="my_modal_3" class="modal">
+                        <div class="modal-box text-center space-y-3">
+                            <h1 class="text-4xl font-extrabold">Congrates!</h1>
+                            <div class="flex justify-center">
+                                <img src="./assets/coin.png" alt="">
+                            </div>
+
+                            <p class="opacity-50">You Have Donate for Humankind</p>
+                            <h2 class="text-2xl font-semibold">Successfully</h2>
+
+
+                            <div class="modal-action flex justify-center">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn flex justify-center">Close confirmation</button>
+                                </form>
+                            </div>
+                        </div>
+                    </dialog>
+                    </form>
                 </div>
             </div>
         </section>
 
-        <section id="historyContainerId">
-            <p class="text-center">reza</p>
+        <section id="historyContainerId" class="hidden">
 
         </section>
+
+
 
 
     </main>
 
     <script src="js/button.js"></script>
+    <script src="js/commonFunction.js"></script>
 
 </body>
 

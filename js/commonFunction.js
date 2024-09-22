@@ -5,9 +5,9 @@ function inputValidation(id) {
     let total = document.getElementById('totalBalanceId').innerText
     total = parseFloat(total)
     if (!isNaN(money) && money <= total && money > 0) {
-        document.getElementById('my_modal_3').showModal
+        document.getElementById('my_modal_1').showModal
             ();
-        total += money;
+        total -= money;
         document.getElementById('totalBalanceId').innerText = total;
         return money;
     } else {
@@ -33,6 +33,5 @@ function updateHistory(id, money) {
    <p class="opacity-50">Date : ${date}</p>
     </div>`
     document.getElementById('historyContainerId').appendChild(div);
-    console.log(div.innerText)
 
 }

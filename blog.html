@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Daisy Ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4cb4624b15.js" crossorigin="anonymous"></script>
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <style>
+        .lexend {
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="bg-[#F9F7F3] md:pt-5 md:pb-7  p-3">
+            <nav class=" flex justify-between container mx-auto items-center  ">
+                <button id="reza" class="btn bg-[#B4F461] md:text-xl font-semibold">Home</button>
+                <div class="flex items-center gap-2">
+                    <img class="w-[30px] md:w-auto" src="./assets/logo.png" alt="">
+                    <p class="md:text-xl font-semibold">Donation Bangladesh</p>
+                </div>
+                <div class="flex gap-3">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="md:text-xl font-semibold text-[#111111B3]"><span id="totalBalanceId">5500</span> BDT</p>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class=" container mx-auto">
+        <section>
+            <h1 class="text-4xl font-extrabold my-7 lg:my-10">Important FAQ</h1>
+        </section>
+        <!-- FAQ -->
+        <div class="">
+            <div class="collapse collapse-plus border-[1px] rounded-none rounded-t-lg">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM) ?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface that represents HTML and XML documents
+                        as a tree of objects. Each part of a webpage, like elements, attributes, and text, is
+                        represented as a node in this tree structure. The DOM allows developers to easily access,
+                        modify, add, or delete elements and content dynamically using JavaScript, making web pages
+                        interactive and responsive</p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus border-[1px] rounded-none">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>To select an element from the DOM in JavaScript, you can use the following methods:</p><br>
+                    <p>1. getElementById(): Selects an element by its ID attribute.</p>
+                    <p>2. getElementsByClassName(): Selects elements based on their class name and returns a collection.
+                    </p>
+                    <p>3. getElementsByTagName(): Selects all elements with a specific tag name.</p>
+                    <p>4. querySelector(): Selects the first element that matches a specified CSS selector.</p>
+                    <p>5. querySelectorAll(): Selects all elements that match a specified CSS selector and returns a
+                        NodeList.</p><br>
+                    <p>These methods allow you to easily locate and manipulate DOM elements based on various selectors
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus border-[1px] rounded-none rounded-b-lg">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of DOM, and why
+                    is it useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a technique in JavaScript that allows you to attach a single event listener
+                        to a parent element that manages events triggered by its child elements. Instead of adding
+                        individual event listeners to each child element, you attach one listener to the parent and use
+                        it to handle events from all matching child elements. This works because events "bubble" up the
+                        DOM, meaning they propagate from the target element up to its parents.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-plus border-[1px] rounded-none rounded-b-lg">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p>To manipulate an element's attributes and styles using the DOM, you can use the following
+                        methods:</p>
+                    <div>
+                        <h2>Manipulate Attributes:</h2><br>
+                        <p>1. setAttribute(name, value): Sets or updates an attribute.</p>
+                        <p>2. getAttribute(name): Gets the value of an attribute</p>
+                        <p>3. removeAttribute(name): Removes an attribute from an element.</p>
+                    </div> <br>
+                    <div>
+                        <h2>Manipulate Styles:</h2>
+                        <p>1.element.style.property = value;: Directly sets a CSS property.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="js/blogButton.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donate</title>
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Daisy Ui -->
@@ -27,28 +27,31 @@
 </head>
 
 <body class="lexend">
-    <header class="pt-7 pb-12 bg-[#F9F7F3] p-5">
-        <nav class=" flex justify-between container mx-auto items-center ">
-            <button class="btn bg-[#B4F461] md:text-xl font-semibold">Blog</button>
-            <div class="flex items-center gap-2">
-                <img class="w-[30px] md:w-auto" src="./assets/logo.png" alt="">
-                <p class="md:text-xl font-semibold">Donation Bangladesh</p>
-            </div>
-            <div class="flex gap-3">
-                <img src="./assets/coin.png" alt="">
-                <p class="md:text-xl font-semibold text-[#111111B3]"><span id="totalBalanceId">5500</span> BDT</p>
-
-            </div>
-        </nav>
+    <header class="md:pt-5 md:pb-7  p-3">
+        <div class="bg-[#F9F7F3] md:pt-7 md:pb-12  p-3">
+            <nav class=" flex justify-between container mx-auto items-center  ">
+                <button id="blogPageBtn" class="btn bg-[#B4F461] md:text-xl font-semibold">Blog</button>
+                <div class="flex items-center gap-2">
+                    <img class="w-[30px] md:w-auto" src="./assets/logo.png" alt="">
+                    <p class="md:text-xl font-semibold">Donation Bangladesh</p>
+                </div>
+                <div class="flex gap-3">
+                    <img src="./assets/coin.png" alt="">
+                    <p class="md:text-xl font-semibold text-[#111111B3]"><span id="totalBalanceId">5500</span> BDT</p>
+                </div>
+            </nav>
+        </div>
+        <!-- Home Page Button Switch -->
+        <div class="flex justify-center gap-5 md:mt-14 mt-7 lg:7 mb-5">
+            <button id="donationBtn" class="btn hover:bg-[#B4F461]">Donation</button>
+            <button id="historyBtn" class="btn hover:bg-[#B4F461]">History</button>
+        </div>
     </header>
 
     <main class="px-5">
         <section class="container mx-auto space-y-10">
             <!-- Button Div Start -->
-            <div class="flex justify-center gap-5 mt-14 mb-20">
-                <button id="donationBtn" class="btn hover:bg-[#B4F461]">Donation</button>
-                <button id="historyBtn" class="btn hover:bg-[#B4F461]">History</button>
-            </div>
+
         </section>
         <!-- Button Div End -->
 
@@ -56,7 +59,8 @@
         <section id="cardContainerId" class="container mx-auto space-y-10 ">
             <!-- Card Container ---01 -->
             <div class="flex gap-7 xl:gap-10 flex-col md:flex-row ">
-                <img class="rounded-lg xl:w-[522px] md:w-[350px] lg:w-[450px] h-[300px] md:h-auto object-fit" src="./assets/noakhali.png" alt="">
+                <img class="rounded-lg xl:w-[522px] md:w-[350px] lg:w-[450px] h-[300px] md:h-auto object-fit"
+                    src="./assets/noakhali.png" alt="">
                 <div class="space-y-7">
                     <button class="btn"><img src="./assets/coin.png" alt=""><span id="card1DonationId">155</span>
                         BDT</button>
@@ -99,9 +103,10 @@
                 </div>
             </div>
 
-             <!-- Card Container ---02 -->
-             <div class="flex gap-7 xl:gap-10 flex-col md:flex-row  ">
-                <img class="rounded-lg xl:w-[522px] md:w-[350px] lg:w-[450px] h-[300px] md:h-auto object-fit" src="./assets/feni.png" alt="">
+            <!-- Card Container ---02 -->
+            <div class="flex gap-7 xl:gap-10 flex-col md:flex-row  ">
+                <img class="rounded-lg xl:w-[522px] md:w-[350px] lg:w-[450px] h-[300px] md:h-auto object-fit"
+                    src="./assets/feni.png" alt="">
                 <div class="space-y-7">
                     <button class="btn"><img src="./assets/coin.png" alt=""><span id="card2DonationId">50</span>
                         BDT</button>
@@ -146,7 +151,8 @@
 
             <!-- Card Container ---03 -->
             <div class="flex gap-7 xl:gap-10 flex-col md:flex-row  ">
-                <img class="rounded-lg xl:w-[522px] md:w-[350px] lg:w-[450px] h-[300px] md:h-auto object-fit " src="./assets/quota-protest.png" alt="">
+                <img class="rounded-lg xl:w-[522px] md:w-[350px] lg:w-[450px] h-[300px] md:h-auto object-fit "
+                    src="./assets/quota-protest.png" alt="">
                 <div class="space-y-7">
                     <button class="btn"><img src="./assets/coin.png" alt=""><span id="card3DonationId">50</span>
                         BDT</button>

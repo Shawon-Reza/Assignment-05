@@ -17,6 +17,10 @@ document.getElementById('historyBtn').addEventListener('click', function () {
     document.getElementById('donationBtn').classList.remove('bg-[#B4F461]')
     document.getElementById('historyBtn').classList.add('bg-[#B4F461]')
 })
+// Home page to Blog Page
+document.getElementById('blogPageBtn').addEventListener('click',function(){
+    window.location.href="blog.html"
+})
 
 
 

@@ -53,3 +53,18 @@ document.getElementById('donateProcessBtn3').addEventListener('click', function 
     // 
     const updatedHistory=updateHistory('headingForQuota',money)
 })
+
+
+
+// Navber Scroll 
+window.addEventListener('scroll', function () {
+    const navbar = document.getElementById('navbar');
+    
+    // Check if the scroll position is greater than a set value (e.g., 50 pixels)
+    if (window.scrollY > 50) {
+      navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.9)'; // Semi-transparent background
+    } else {
+      navbar.style.backgroundColor = 'transparent'; // Transparent background
+    }
+  });
+  
